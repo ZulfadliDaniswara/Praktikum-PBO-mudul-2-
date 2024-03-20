@@ -36,12 +36,27 @@ def main():
 if __name__ == "__main__":
     main()
 """
-nim = input("Masukkan NIM Anda: ")
-last_two_digits = nim[-2:]
+class AngkaTanpaNIM:
+    def __init__(self):
+        self.nim = ""
+    
+    def input_nim(self):
+        self.nim = input("Masukkan NIM Anda: ")
 
-print("Deret angka dari 1 sampai 50 (kecuali 2 digit terakhir dari NIM):")
+    def generate_numbers(self):
+        last_two_digits = self.nim[-2:]
+        print("Deret angka dari 1 sampai 50 (kecuali 2 digit terakhir dari NIM):")
 
-for i in range(1, 51):
-    if str(i) == last_two_digits:
-        continue  
-    print(i, end=" ")  
+        for i in range(1, 51):
+            if str(i) == last_two_digits:
+                continue
+            print(i, end=" ")
+
+# Membuat instance dari kelas AngkaTanpaNIM
+angka_tanpa_nim = AngkaTanpaNIM()
+
+# Meminta input NIM dari pengguna
+angka_tanpa_nim.input_nim()
+
+# Menampilkan deret angka tanpa 2 digit terakhir NIM
+angka_tanpa_nim.generate_numbers()
