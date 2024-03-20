@@ -1,0 +1,47 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Mar 15 11:38:03 2024
+
+@author: Zulfadli
+"""
+"""
+class Segitiga:
+    
+    def hitung_luas_segitiga(alas, tinggi):
+        return 0.5 * alas * tinggi 
+
+    
+    def hitung_keliling_segitiga(sisi_a, sisi_b, sisi_c):
+        return sisi_a + sisi_b + sisi_c 
+
+def main():
+    print("Program Menghitung Luas dan Keliling Segitiga")
+    print("=============================================")
+    pilihan = input("Pilih mode:\n1. Hitung Luas\n2. Hitung Keliling\nPilihan: ")
+
+    if pilihan == '1': 
+        alas = float(input("Masukkan panjang alas segitiga: "))
+        tinggi = float(input("Masukkan tinggi segitiga: "))
+        luas = Segitiga.hitung_luas_segitiga(alas, tinggi)
+        print("Luas segitiga adalah:", luas)
+    elif pilihan == '2':
+        sisi_a = float(input("Masukkan panjang sisi A segitiga: "))
+        sisi_b = float(input("Masukkan panjang sisi B segitiga: "))
+        sisi_c = float(input("Masukkan panjang sisi C segitiga: "))
+        keliling = Segitiga.hitung_keliling_segitiga(sisi_a, sisi_b, sisi_c)
+        print("Keliling segitiga adalah:", keliling)
+    else:
+        print("Pilihan tidak valid. Silakan coba lagi.")
+
+if __name__ == "__main__":
+    main()
+"""
+nim = input("Masukkan NIM Anda: ")
+last_two_digits = nim[-2:]
+
+print("Deret angka dari 1 sampai 50 (kecuali 2 digit terakhir dari NIM):")
+
+for i in range(1, 51):
+    if str(i) == last_two_digits:
+        continue  
+    print(i, end=" ")  
